@@ -17,6 +17,10 @@ I have no idea, let's check.
 ### How does this work?
 
 ##Let's put some code in here and find out!
-`print "Fuck you!"`
+
+{%codeblock lang:hs %}
+fibs = 1:1:zipWith (+) fibs (tail fibs)
+{% endcodeblock %}
+
 
 Oh good it works.
