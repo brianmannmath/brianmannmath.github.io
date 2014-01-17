@@ -4,7 +4,7 @@
   <title><![CDATA[Math and Programming]]></title>
   <link href="http://brianmannmath.github.io/atom.xml" rel="self"/>
   <link href="http://brianmannmath.github.io/"/>
-  <updated>2014-01-17T16:05:14-05:00</updated>
+  <updated>2014-01-17T16:22:00-05:00</updated>
   <id>http://brianmannmath.github.io/</id>
   <author>
     <name><![CDATA[Brian Mann]]></name>
@@ -28,7 +28,10 @@
 
 <h2>Let&rsquo;s put some code in here and find out!</h2>
 
-<p><code>print "Fuck you!"</code></p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='hs'><span class='line'><span class="nf">fibs</span> <span class="ow">=</span> <span class="mi">1</span><span class="kt">:</span><span class="mi">1</span><span class="kt">:</span><span class="n">zipWith</span> <span class="p">(</span><span class="o">+</span><span class="p">)</span> <span class="n">fibs</span> <span class="p">(</span><span class="n">tail</span> <span class="n">fibs</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>Oh good it works.</p>
 ]]></content>
