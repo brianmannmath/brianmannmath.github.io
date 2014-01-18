@@ -9,8 +9,8 @@
   <meta name="author" content="Brian Mann">
 
   
-  <meta name="description" content="Blog Archive 2014 This Is a Test
-Jan 17 2014 Recent Posts This Is a Test GitHub Repos Status updating... @brianmannmath on GitHub $(document).ready( &hellip;">
+  <meta name="description" content="Blog Archive 2014 Who Am I?
+Jan 18 2014 Recent Posts Who Am I? GitHub Repos Status updating... @brianmannmath on GitHub $(document).ready(function &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -39,7 +39,7 @@ Jan 17 2014 Recent Posts This Is a Test GitHub Repos Status updating... @brianma
   <header role="banner"><hgroup>
   <h1><a href="/">Math and Programming</a></h1>
   
-    <h2>A blog about my love of mathematics and computers.</h2>
+    <h2>A blog about my love of mathematics, functional programming, and computers.</h2>
   
 </hgroup>
 
@@ -81,8 +81,8 @@ Jan 17 2014 Recent Posts This Is a Test GitHub Repos Status updating... @brianma
 
 <article>
   
-<h1><a href="/blog/2014/01/17/test-post/">This Is a Test</a></h1>
-<time datetime="2014-01-17T15:21:57-05:00" pubdate><span class='month'>Jan</span> <span class='day'>17</span> <span class='year'>2014</span></time>
+<h1><a href="/blog/2014/01/18/first-post/">Who Am I?</a></h1>
+<time datetime="2014-01-18T14:41:34-07:00" pubdate><span class='month'>Jan</span> <span class='day'>18</span> <span class='year'>2014</span></time>
 
 
 </article>
@@ -101,7 +101,7 @@ Jan 17 2014 Recent Posts This Is a Test GitHub Repos Status updating... @brianma
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/01/17/test-post/">This Is a Test</a>
+        <a href="/blog/2014/01/18/first-post/">Who Am I?</a>
       </li>
     
   </ul>
@@ -176,3 +176,21 @@ Jan 17 2014 Recent Posts This Is a Test GitHub Repos Status updating... @brianma
 
 </body>
 </html>
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+

@@ -4,7 +4,7 @@
   <title><![CDATA[Math and Programming]]></title>
   <link href="http://brianmannmath.github.io/atom.xml" rel="self"/>
   <link href="http://brianmannmath.github.io/"/>
-  <updated>2014-01-17T16:24:44-05:00</updated>
+  <updated>2014-01-18T16:19:42-07:00</updated>
   <id>http://brianmannmath.github.io/</id>
   <author>
     <name><![CDATA[Brian Mann]]></name>
@@ -14,26 +14,42 @@
 
   
   <entry>
-    <title type="html"><![CDATA[This Is a Test]]></title>
-    <link href="http://brianmannmath.github.io/blog/2014/01/17/test-post/"/>
-    <updated>2014-01-17T15:21:57-05:00</updated>
-    <id>http://brianmannmath.github.io/blog/2014/01/17/test-post</id>
-    <content type="html"><![CDATA[<h1>I have no idea what I&rsquo;m doing.</h1>
+    <title type="html"><![CDATA[Who Am I?]]></title>
+    <link href="http://brianmannmath.github.io/blog/2014/01/18/first-post/"/>
+    <updated>2014-01-18T14:41:34-07:00</updated>
+    <id>http://brianmannmath.github.io/blog/2014/01/18/first-post</id>
+    <content type="html"><![CDATA[<p>My name is Brian Mann, and I’m a mathematician turned programmer/computer scientiest.</p>
 
-<h2>But maybe this will work?</h2>
+<p>Currently, I’m a doctoral student that the University of Utah doing research in the field of <a href="http://en.wikipedia.org/wiki/Geometric_group_theory">geometric group theory</a> under the advisement of <a href="http://en.wikipedia.org/wiki/Mladen_Bestvina">Mladen Bestvina</a>. Specifically, I study the outer automorphism group of finite rank free groups, and also the dynamics of group actions on $\mathbb{R} \mbox{-trees}$. I’ve written/co-authored a two papers: <a href="http://arxiv.org/abs/1212.2986">Hyperbolicity of the Cyclic Splitting Complex</a> and <a href="http://arxiv.org/abs/1311.1771">Constructing Non-uniquely Ergodic Arational Trees</a>. (<em>A word of warning: these papers are not for beginners. They require basic knowledge about standard tools in geometric group theory, especially <a href="http://en.wikipedia.org/wiki/Bass-Serre">Bass-Serre Theory</a>. I will likely talk more about the background required in later posts.</em>)</p>
 
-<p>I have no idea, let&rsquo;s check.</p>
+<p>For an overview of what I’ve been thinking about recently, you might want to look at slides from a recent <a href="https://github.com/brianmannmath/JointMathMeetings/blob/master/JMM_talk.pdf">talk</a> I gave at the Joint Math Meetings.</p>
 
-<h3>How does this work?</h3>
+<p>I love mathematics. But for various reasons (which I will likely write about in the future) I have decided not to pursue a career in academics. I also love computers. I’ve always been fascinated by them and enjoyed all of the little coding projects I’ve needed to do in my career as a mathematician, but have never had time to <em>really</em> learn to code. Now that I’m graduating, I’ve decided to change that. I’m teaching myself Python, R, Haskell, and C++ and trying to get a job in the Seattle area which uses my mathmematical knowledge/skills to computer-related applications (data science, crytpography, software development, etc…).</p>
 
-<h2>Let&rsquo;s put some code in here and find out!</h2>
+<p>This blog is mainly to document my transformation from pure mathematician to a hybrid mathematician/computer-scientist/programmer. Although I am currently focusing on learning Python and R (which I feel will be most useful in my job hunt), I’m hoping to post a lot about Haskell. Which brings me to my next point…</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='hs'><span class='line'><span class="nf">fibs</span> <span class="ow">=</span> <span class="mi">1</span><span class="kt">:</span><span class="mi">1</span><span class="kt">:</span><span class="n">zipWith</span> <span class="p">(</span><span class="o">+</span><span class="p">)</span> <span class="n">fibs</span> <span class="p">(</span><span class="n">tail</span> <span class="n">fibs</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
+<h4 id="i-fucking-love-haskell">I fucking love Haskell.</h4>
 
+<p>Look at this:</p>
 
-<p>Oh good it works.</p>
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="hs"><span class="line"><span class="nf">fibs</span> <span class="ow">=</span> <span class="mi">1</span><span class="kt">:</span><span class="mi">1</span><span class="kt">:</span><span class="n">zipWith</span> <span class="p">(</span><span class="o">+</span><span class="p">)</span> <span class="n">fibs</span> <span class="p">(</span><span class="n">tail</span> <span class="n">fibs</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>I won’t lie and say this line of code made me fall in love with Haskell, because that’s not true. But it’s certainly one of the most beautiful lines of code I’ve ever seen. I fell in love with Haskell when a good friend (a hacker-turned-algebraic geometer-turned-computer security expert) told me about it. A language based on category theory, you say? Yes please. </p>
+
+<p>Let me explain. I know <em>a lot</em> of category theory. I spent much of my undergrad at the University of Michigan taking graduate level math classes in algebraic geometry. And algebraic geometers <em>love</em> category theory. Why? Because it’s an <em>incredibly expressive language</em> which allows mathematicians to phrase difficult questions in simple, elegant terms. Sound familiar?</p>
+
+<p>When I learned about Haskell, I didn’t know much about programming. But I knew enough to guess at the expressive power of a language based on categorical ideas. At the time, I poked around <a href="http://learnyouahaskell.com/">Learn you a Haskell</a> a bit, but never made any real progress; as an undergraduate taking graduate level mathematics and who was <em>sure</em> he wanted to go into academics, the only real motivation I had to learn Haskell was curiousity. Now I have quite a bit more. </p>
+
+<p>I love Haskell for the same reason I love mathematics. It’s beautiful. Expressive. Powerful. Working in Haskell teaches me to think in different ways about programming. And perhaps one of the reasons I like it so much is because it’s so <em>familiar</em>. It feels like mathematics, because it is mathematics.</p>
+
+<p>Anecdote: I was curious about what a monad was, so naturally I went to <a href="http://en.wikipedia.org/wiki/Monad_(functional_programming)">the wikipedia page</a>. Admittedly, I was confused. Programmers think about things a little differently than mathematicians. So I went to <a href="http://en.wikipedia.org/wiki/Monad_(category_theory)">this wikipedia page</a> and learned what a monad was in category theory. And everything made sense. </p>
+
+<h4 id="so-whats-this-blog-for-anyways">So what’s this blog for anyways?</h4>
+
+<p>My goal here is simple. I want to tell people about cool things I’ve learned and am learning. I want people to know that high-level mathematics isn’t scary. It’s beautiful and fun, just like Haskell. I want people to be curious and ask questions about what I post. I want to force myself to explain things in simple terms so I understand them better myself.</p>
+
 ]]></content>
   </entry>
   
