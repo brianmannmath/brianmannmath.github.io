@@ -4,7 +4,7 @@
 
 url: http://brianmannmath.github.io
 title: Math and Programming
-subtitle: A blog about my love of mathematics and computers.
+subtitle: A blog about my love of mathematics, functional programming, and computers.
 author: Brian Mann
 simple_search: http://google.com/search
 description:
@@ -33,7 +33,7 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
+markdown: kramdown
 rdiscount:
   extensions:
     - autolink
