@@ -4,7 +4,7 @@
   <title><![CDATA[Math and Programming]]></title>
   <link href="http://brianmannmath.github.io/atom.xml" rel="self"/>
   <link href="http://brianmannmath.github.io/"/>
-  <updated>2014-01-20T14:39:07-07:00</updated>
+  <updated>2014-01-20T14:55:26-07:00</updated>
   <id>http://brianmannmath.github.io/</id>
   <author>
     <name><![CDATA[Brian Mann]]></name>
@@ -20,7 +20,7 @@
     <id>http://brianmannmath.github.io/blog/2014/01/18/first-post</id>
     <content type="html"><![CDATA[<p>My name is Brian Mann, and I’m a mathematician turned programmer/computer scientiest.</p>
 
-<p>Currently, I’m a doctoral student that the University of Utah doing research in the field of <a href="http://en.wikipedia.org/wiki/Geometric_group_theory">geometric group theory</a> under the advisement of <a href="http://en.wikipedia.org/wiki/Mladen_Bestvina">Mladen Bestvina</a>. Specifically, I study the outer automorphism group of finite rank free groups, and also the dynamics of group actions on $\mathbb{R} \mbox{-trees}$. I’ve written/co-authored a two papers: <a href="http://arxiv.org/abs/1212.2986">Hyperbolicity of the Cyclic Splitting Complex</a> and <a href="http://arxiv.org/abs/1311.1771">Constructing Non-uniquely Ergodic Arational Trees</a>. (<em>A word of warning: these papers are not for beginners. They require basic knowledge about standard tools in geometric group theory, especially <a href="http://en.wikipedia.org/wiki/Bass-Serre">Bass-Serre Theory</a>. I will likely talk more about the background required in later posts.</em>)</p>
+<p>Currently, I’m a doctoral student that the University of Utah doing research in the field of <a href="http://en.wikipedia.org/wiki/Geometric_group_theory">geometric group theory</a> under the advisement of <a href="http://en.wikipedia.org/wiki/Mladen_Bestvina">Mladen Bestvina</a>. Specifically, I study the outer automorphism group of finite rank free groups, and also the dynamics of group actions on $\mathbb{R} \mbox{-trees}$. I’ve written/co-authored two papers: <a href="http://arxiv.org/abs/1212.2986">Hyperbolicity of the Cyclic Splitting Complex</a> and <a href="http://arxiv.org/abs/1311.1771">Constructing Non-uniquely Ergodic Arational Trees</a>. (<em>A word of warning: these papers are not for beginners. They require basic knowledge about standard tools in geometric group theory, especially <a href="http://en.wikipedia.org/wiki/Bass-Serre">Bass-Serre Theory</a>. I will likely talk more about the background required in later posts.</em>)</p>
 
 <p>For an overview of what I’ve been thinking about recently, you might want to look at slides from a recent <a href="https://github.com/brianmannmath/JointMathMeetings/blob/master/JMM_talk.pdf">talk</a> I gave at the Joint Math Meetings.</p>
 
