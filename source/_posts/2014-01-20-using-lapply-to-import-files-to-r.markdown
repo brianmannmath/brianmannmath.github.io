@@ -3,7 +3,7 @@ layout: post
 title: "Using lapply to import files to R"
 date: 2014-01-20 18:22:42 -0700
 comments: true
-published: false
+published: true
 categories: 
 ---
 
