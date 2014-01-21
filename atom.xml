@@ -4,7 +4,7 @@
   <title><![CDATA[Math and Programming]]></title>
   <link href="http://brianmannmath.github.io/atom.xml" rel="self"/>
   <link href="http://brianmannmath.github.io/"/>
-  <updated>2014-01-20T18:53:54-07:00</updated>
+  <updated>2014-01-20T18:55:16-07:00</updated>
   <id>http://brianmannmath.github.io/</id>
   <author>
     <name><![CDATA[Brian Mann]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using Lapply to Import Files to R]]></title>
+    <link href="http://brianmannmath.github.io/blog/2014/01/20/using-lapply-to-import-files-to-r/"/>
+    <updated>2014-01-20T18:22:42-07:00</updated>
+    <id>http://brianmannmath.github.io/blog/2014/01/20/using-lapply-to-import-files-to-r</id>
+    <content type="html"><![CDATA[<p>One of the trickest parts, for me, of learning a new language is figuring out how it interacts with the outside world (i.e. the rest of your computer). This post might seem dumb to people with even a few months of R experience, but I decided to post it anyway, if only to document my learning process. When I started learning R I was given the following task: you have a directory which stores several .csv files, say 001.csv, 002.csv, … 332.csv and a task which requires you to do something with all of them. The task itself is irrelevant, so we’ll ignore it. How do you import all these files efficiently? </p>
+
+<p>My first instinct (probably because the file names were all numbers) was to loop over all of the names. But, of course, needed to ensure all of the zeroes were still there. So I needed to do something like</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="r"><span class="line">num <span class="o">=</span> formatC<span class="p">(</span>id<span class="p">,</span> width <span class="o">=</span> <span class="m">3</span><span class="p">,</span> flag <span class="o">=</span> <span class="s">&quot;0&quot;</span><span class="p">)</span> <span class="c1">#creates a 3-digit string representing an integer</span>
+</span><span class="line">D <span class="o">&lt;-</span> paste<span class="p">(</span>directory<span class="p">,</span> paste<span class="p">(</span>num<span class="p">,</span> <span class="s">&quot;csv&quot;</span><span class="p">,</span> sep <span class="o">=</span> <span class="s">&quot;.&quot;</span><span class="p">),</span> sep <span class="o">=</span> <span class="s">&quot;/&quot;</span><span class="p">)</span> <span class="c1">#D is the file name string</span>
+</span><span class="line">x <span class="o">&lt;-</span> read.csv<span class="p">(</span>D<span class="p">)</span>
+</span><span class="line">data <span class="o">&lt;-</span> c<span class="p">(</span>data<span class="p">,</span>x<span class="p">)</span> <span class="c1">#data is a list of all the data frames we needed to import</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>where id is an integer ranging from 1 to 332. But that’s gross, and in any case, it doesn’t work if the names of the files don’t live in some list you can easily access (like 1:332). Recall, though, that R has some nice “map” functions, namely ‘lapply’. Also</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="r"><span class="line">dir<span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>returns a list of the names of files in the working directory. So</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="r"><span class="line">setwd<span class="p">(</span><span class="s">&quot;where your .csv files are&quot;</span><span class="p">)</span>
+</span><span class="line">data <span class="o">&lt;-</span> lapply<span class="p">(</span>dir<span class="p">(),</span>read.csv<span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>returns a data frame consisting of all the .csv files you needed to import. Voila. </p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Who Am I?]]></title>

@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Math and Programming</title>
+  <title>Using Lapply to Import Files to R - Math and Programming</title>
   <meta name="author" content="Brian Mann">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://brianmannmath.github.io">
+  <link rel="canonical" href="http://brianmannmath.github.io/blog/2014/01/20/using-lapply-to-import-files-to-r">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Math and Programming" type="application/atom+xml">
@@ -63,15 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/01/20/using-lapply-to-import-files-to-r/">Using Lapply to Import Files to R</a></h1>
+      <h1 class="entry-title">Using Lapply to Import Files to R</h1>
     
     
       <p class="meta">
@@ -94,7 +91,7 @@
   </header>
 
 
-  <div class="entry-content"><p>One of the trickest parts, for me, of learning a new language is figuring out how it interacts with the outside world (i.e. the rest of your computer). This post might seem dumb to people with even a few months of R experience, but I decided to post it anyway, if only to document my learning process. When I started learning R I was given the following task: you have a directory which stores several .csv files, say 001.csv, 002.csv, … 332.csv and a task which requires you to do something with all of them. The task itself is irrelevant, so we’ll ignore it. How do you import all these files efficiently? </p>
+<div class="entry-content"><p>One of the trickest parts, for me, of learning a new language is figuring out how it interacts with the outside world (i.e. the rest of your computer). This post might seem dumb to people with even a few months of R experience, but I decided to post it anyway, if only to document my learning process. When I started learning R I was given the following task: you have a directory which stores several .csv files, say 001.csv, 002.csv, … 332.csv and a task which requires you to do something with all of them. The task itself is irrelevant, so we’ll ignore it. How do you import all these files efficiently? </p>
 
 <p>My first instinct (probably because the file names were all numbers) was to loop over all of the names. But, of course, needed to ensure all of the zeroes were still there. So I needed to do something like</p>
 
@@ -124,22 +121,16 @@
 
 <p>returns a data frame consisting of all the .csv files you needed to import. Voila. </p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/01/18/first-post/">Who Am I?</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Brian Mann</span></span>
+
+      
 
 
 
@@ -151,58 +142,32 @@
   
 
 
-<time datetime="2014-01-18T14:41:34-07:00" pubdate data-updated="true">Jan 18<span>th</span>, 2014</time>
-        
-      </p>
+<time datetime="2014-01-20T18:22:42-07:00" pubdate data-updated="true">Jan 20<span>th</span>, 2014</time>
+      
+
+
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://brianmannmath.github.io/blog/2014/01/20/using-lapply-to-import-files-to-r/" data-via="" data-counturl="http://brianmannmath.github.io/blog/2014/01/20/using-lapply-to-import-files-to-r/" >Tweet</a>
+  
+  
+  
+</div>
 
-
-  <div class="entry-content"><p>My name is Brian Mann, and I’m a mathematician turned programmer/computer scientist.</p>
-
-<p>Currently, I’m a doctoral student that the University of Utah doing research in the field of <a href="http://en.wikipedia.org/wiki/Geometric_group_theory">geometric group theory</a> under the advisement of <a href="http://en.wikipedia.org/wiki/Mladen_Bestvina">Mladen Bestvina</a>. Specifically, I study the outer automorphism group of finite rank free groups, and also the dynamics of group actions on $\mathbb{R} \mbox{-trees}$. I’ve written/co-authored two papers: <a href="http://arxiv.org/abs/1212.2986">Hyperbolicity of the Cyclic Splitting Complex</a> and <a href="http://arxiv.org/abs/1311.1771">Constructing Non-uniquely Ergodic Arational Trees</a>. (<em>A word of warning: these papers are not for beginners. They require basic knowledge about standard tools in geometric group theory, especially <a href="http://en.wikipedia.org/wiki/Bass-Serre">Bass-Serre Theory</a>. I will likely talk more about the background required in later posts.</em>)</p>
-
-<p>For an overview of what I’ve been thinking about recently, you might want to look at slides from a recent <a href="https://github.com/brianmannmath/JointMathMeetings/blob/master/JMM_talk.pdf">talk</a> I gave at the Joint Math Meetings.</p>
-
-<p>I love mathematics. But for various reasons (which I will likely write about in the future) I have decided not to pursue a career in academics. I also love computers. I’ve always been fascinated by them and enjoyed all of the little coding projects I’ve needed to do in my career as a mathematician, but have never had time to <em>really</em> learn to code. Now that I’m graduating, I’ve decided to change that. I’m teaching myself Python, R, Haskell, and C++ and trying to get a job in the Seattle area which uses my mathmematical knowledge/skills to computer-related applications (data science, crytpography, software development, etc…).</p>
-
-<p>This blog is mainly to document my transformation from pure mathematician to a hybrid mathematician/computer-scientist/programmer. Although I am currently focusing on learning Python and R (which I feel will be most useful in my job hunt), I’m hoping to post a lot about Haskell. Which brings me to my next point…</p>
-
-<h4 id="i-fucking-love-haskell">I fucking love Haskell.</h4>
-
-<p>Look at this:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="hs"><span class="line"><span class="nf">fibs</span> <span class="ow">=</span> <span class="mi">1</span><span class="kt">:</span><span class="mi">1</span><span class="kt">:</span><span class="n">zipWith</span> <span class="p">(</span><span class="o">+</span><span class="p">)</span> <span class="n">fibs</span> <span class="p">(</span><span class="n">tail</span> <span class="n">fibs</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>I won’t lie and say this line of code made me fall in love with Haskell, because that’s not true. But it’s certainly one of the most beautiful lines of code I’ve ever seen. I fell in love with Haskell when a good friend (a hacker-turned-algebraic geometer-turned-computer security expert) told me about it. A language based on category theory, you say? Yes please. </p>
-
-<p>Let me explain. I know <em>a lot</em> of category theory. I spent much of my undergrad at the University of Michigan taking graduate level math classes in algebraic geometry. And algebraic geometers <em>love</em> category theory. Why? Because it’s an <em>incredibly expressive language</em> which allows mathematicians to phrase difficult questions in simple, elegant terms. Sound familiar?</p>
-
-<p>When I learned about Haskell, I didn’t know much about programming. But I knew enough to guess at the expressive power of a language based on categorical ideas. At the time, I poked around <a href="http://learnyouahaskell.com/">Learn you a Haskell</a> a bit, but never made any real progress; as an undergraduate taking graduate level mathematics and who was <em>sure</em> he wanted to go into academics, the only real motivation I had to learn Haskell was curiousity. Now I have quite a bit more. </p>
-
-<p>I love Haskell for the same reason I love mathematics. It’s beautiful. Expressive. Powerful. Working in Haskell teaches me to think in different ways about programming. And perhaps one of the reasons I like it so much is because it’s so <em>familiar</em>. It feels like mathematics, because it is mathematics.</p>
-
-<p>Anecdote: I was curious about what a monad was, so naturally I went to <a href="http://en.wikipedia.org/wiki/Monad_(functional_programming)">the wikipedia page</a>. Admittedly, I was confused. Programmers think about things a little differently than mathematicians. So I went to <a href="http://en.wikipedia.org/wiki/Monad_(category_theory)">this wikipedia page</a> and learned what a monad was in category theory. And everything made sense. </p>
-
-<h4 id="so-whats-this-blog-for-anyways">So what’s this blog for anyways?</h4>
-
-<p>My goal here is simple. I want to tell people about cool things I’ve learned and am learning. I want people to know that high-level mathematics isn’t scary. It’s beautiful and fun, just like Haskell. I want people to be curious and ask questions about what I post. I want to force myself to explain things in simple terms so I understand them better myself.</p>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/01/18/first-post/" title="Previous Post: Who am I?">&laquo; Who am I?</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -223,7 +188,7 @@
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <script type="text/javascript">
@@ -253,6 +218,7 @@
 
   
 </aside>
+
 
     </div>
   </div>
