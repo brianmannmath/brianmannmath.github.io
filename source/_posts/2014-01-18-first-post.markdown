@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-My name is Brian Mann, and I'm a mathematician turned programmer/computer scientiest.
+My name is Brian Mann, and I'm a mathematician turned programmer/computer scientist.
 
 Currently, I'm a doctoral student that the University of Utah doing research in the field of [geometric group theory][ggt] under the advisement of [Mladen Bestvina][mladen]. Specifically, I study the outer automorphism group of finite rank free groups, and also the dynamics of group actions on $\mathbb{R} \mbox{-trees}$. I've written/co-authored two papers: [Hyperbolicity of the Cyclic Splitting Complex][splittingcomplex] and [Constructing Non-uniquely Ergodic Arational Trees][NUE]. (*A word of warning: these papers are not for beginners. They require basic knowledge about standard tools in geometric group theory, especially [Bass-Serre Theory][BST]. I will likely talk more about the background required in later posts.*)
 
