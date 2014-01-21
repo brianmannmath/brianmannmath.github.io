@@ -13,8 +13,8 @@ My first instinct (probably because the file names were all numbers) was to loop
 
 {%codeblock lang:r%}
 for (id in 1:332){
-    num = formatC(id, width = 3, flag = "0") #creates a 3-digit string represent	ing an integer
-    D <- paste(directory, paste(num, "csv", sep = "."), sep = "/") #D is the fil	e name string
+    num = formatC(id, width = 3, flag = "0") #creates a 3-digit string representing an integer
+    D <- paste(directory, paste(num, "csv", sep = "."), sep = "/") #D is the file name string
     x <- read.csv(D)
     data <- c(data,x) #data is a list of all the data frames we needed to import
 }
