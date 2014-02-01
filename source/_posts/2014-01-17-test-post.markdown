@@ -29,5 +29,12 @@ Oh good it works.
 # Checking if LaTex works:
 
 $$
-f \mbox{ is continuous if for all } \epsilon > 0 \mbox{ there exists a } \delta > 0...
+\newcommand{\ra}[1]{\!\!\!\!\!\!\!\!\!\!\!\!\xrightarrow{\quad#1\quad}\!\!\!\!\!\!\!\!}
+\newcommand{\da}[1]{\left\downarrow{\scriptstyle#1}\vphantom{\displaystyle\int_0^1}\right.}
+%
+\begin{array}{cccccccccccc}
+X_2 \curvearrowright S_2 & \ra{f_1} & X_3 \curvearrowright S_3 & \ra{f_2} & X_4 \curvearrowright S_4  & \ra{f_3} & \cdots \\
+\da{g_1} & & \da{g_2} & & \da{g_3} \\
+V_2 \curvearrowright S_2 & \ra{h_1} & V_3 \curvearrowright S_4 & \ra{h_2} & V_4\curvearrowright S_4 & \ra{h_3} & \cdots \\
+\end{array}
 $$
