@@ -4,7 +4,7 @@
   <title><![CDATA[Math and Programming]]></title>
   <link href="http://brianmannmath.github.io/atom.xml" rel="self"/>
   <link href="http://brianmannmath.github.io/"/>
-  <updated>2014-02-01T16:47:19-07:00</updated>
+  <updated>2014-02-13T16:48:58-07:00</updated>
   <id>http://brianmannmath.github.io/</id>
   <author>
     <name><![CDATA[Brian Mann]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Math Is Hard]]></title>
+    <link href="http://brianmannmath.github.io/blog/2014/02/13/math-is-hard/"/>
+    <updated>2014-02-13T16:44:35-07:00</updated>
+    <id>http://brianmannmath.github.io/blog/2014/02/13/math-is-hard</id>
+    <content type="html"><![CDATA[<p>(This isn’t aimed at anyone I know, more at people giving out grants or university administration or job interviewers.)</p>
+
+<p>Something I find silly and infuriating: when people equate knowing some math well with being able to explain it well to a lay-person, or when someone gets upset that you can’t explain math to them in simple terms. </p>
+
+<p>Think about it like this: suppose you’ve only learned (very) basic French and a friend is trying to explain some part of a complicated French novel or poem. There’s an idiom you don’t really understand because English doesn’t have anything similar. Of course, you would accept an English approximation of the idiom, even if you don’t understand exactly what it means. And if you really wanted to know you would learn more French. But you probably wouldn’t get upset at your friend; you would realize that it’s impossible for your friend to explain exactly what it means without speaking in French.</p>
+
+<p>Math is a very complicated language with lots of idioms that can’t be explained in English. I’M NOT GOING TO BE ABLE TO GIVE YOU A GOOD IDEA  (OR REALLY ANY IDEA) OF WHAT I’VE SPENT THE LAST 3+ YEARS WORKING ON UNLESS YOU LEARN SOME MATH.</p>
+
+<p>I’m tired of people asserting that I “should” be able to explain my research. How would you explain <script type="math/tex">\mathbb{R}</script>-trees? Out(<script type="math/tex">F_N</script>)? I can talk about geometric group theory at a low level all day, but that describes the research of hundreds (thousands) or people, not <em>my</em> research. Suggestions?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Representation Stability Part 1]]></title>
