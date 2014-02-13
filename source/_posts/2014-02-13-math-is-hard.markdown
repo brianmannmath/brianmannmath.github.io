@@ -15,4 +15,4 @@ Think about it like this: suppose you've only learned (very) basic French and a 
 
 Math is a very complicated language with lots of idioms that can't be explained in English. I'M NOT GOING TO BE ABLE TO GIVE YOU A GOOD IDEA  (OR REALLY ANY IDEA) OF WHAT I'VE SPENT THE LAST 3+ YEARS WORKING ON UNLESS YOU LEARN SOME MATH.
 
-I'm tired of people asserting that I "should" be able to explain my research. How would you explain $$\mathbb{R}$$-trees? Out($$F_N$$)? I can talk about geometric group theory at a low level all day, but that describes the research of hundreds (thousands) or people, not *my* research. Suggestions?
+I'm tired of people asserting that I "should" be able to explain my research. How would you explain $$\mathbb{R}$$-trees? Out($$F_N$$)? I can talk about geometric group theory at a low level all day, but that describes the research of hundreds (thousands) of people, not *my* research. Suggestions?
