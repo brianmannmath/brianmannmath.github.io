@@ -4,7 +4,7 @@
   <title><![CDATA[Math and Programming]]></title>
   <link href="http://brianmannmath.github.io/atom.xml" rel="self"/>
   <link href="http://brianmannmath.github.io/"/>
-  <updated>2014-02-22T15:14:12-07:00</updated>
+  <updated>2014-02-22T15:16:21-07:00</updated>
   <id>http://brianmannmath.github.io/</id>
   <author>
     <name><![CDATA[Brian Mann]]></name>
@@ -20,7 +20,7 @@
     <id>http://brianmannmath.github.io/blog/2014/02/21/integer-partitions</id>
     <content type="html"><![CDATA[<p>Spoiler alert: if you don’t want solutions to project euler problems 31 and 78, stop reading now. </p>
 
-<p>I want to write about these problem, because although they seem similar (and are mathematically similar) they require somewhat solutions in order to run in a reasonable amount of time. Also, it will give me a chance to explain my thought process a bit.</p>
+<p>I want to write about these problem, because although they seem similar (and are mathematically similar) they require somewhat different solutions in order to run in a reasonable amount of time. Also, it will give me a chance to explain my thought process a bit.</p>
 
 <h3 id="problem-31">Problem 31</h3>
 
@@ -30,7 +30,7 @@
 
 <p>If you do it this way, it’s basically impossible to do any sort of dynamic programming. You’ll need to do the same computations over and over again, and there’s not way to avoid this.</p>
 
-<p>A much better solution is to use the tree-like structure natural to this problem and recurse. Here’s what I mean: start with 200. Then substract off every possible coin value: <script type="math/tex">(200-200), (200-100), (200-50), \ldots</script>.</p>
+<p>A much better solution is to use the tree-like structure natural to this problem and recurse. Here’s what I mean: start with 200, then substract off every possible coin value: <script type="math/tex">(200-200), (200-100), (200-50), \ldots</script>.</p>
 
 <p>There’s a catch though! Once you subtract a coin of value <script type="math/tex">k</script>, you’re never allowed to substract a coin of value larger than <script type="math/tex">k</script> in the same branch of the tree. This is to guarantee uniqueness of the partitions (i.e. so we don’t count both <script type="math/tex">5 = 2 + 2 + 1</script> and <script type="math/tex">5 = 1 + 2 + 2</script> as different partitions.)</p>
 
