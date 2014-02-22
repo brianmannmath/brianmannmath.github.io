@@ -4,7 +4,7 @@
   <title><![CDATA[Math and Programming]]></title>
   <link href="http://brianmannmath.github.io/atom.xml" rel="self"/>
   <link href="http://brianmannmath.github.io/"/>
-  <updated>2014-02-22T15:16:21-07:00</updated>
+  <updated>2014-02-22T15:18:08-07:00</updated>
   <id>http://brianmannmath.github.io/</id>
   <author>
     <name><![CDATA[Brian Mann]]></name>
@@ -107,7 +107,7 @@
 <p>Luckily, Euler proved the wonderful formula:
 <script type="math/tex">\displaystyle p(n) = \sum_{k \neq 0} (-1)^{k-1} p(n - k(3k-1)/2)</script>
 where <script type="math/tex">p(0) = 1</script> and if <script type="math/tex">% &lt;![CDATA[
-k < 0 %]]&gt;</script> then <script type="math/tex">p(k) = 0</script>. So at least with this formula, the time it takes to computer <script type="math/tex">p(n)</script> is linear in <script type="math/tex">n</script>.</p>
+k < 0 %]]&gt;</script> then <script type="math/tex">p(k) = 0</script>. So at least with this formula, the time it takes to compute <script type="math/tex">p(n)</script> is linear in <script type="math/tex">n</script>.</p>
 
 <p>Unfortunately, this approach only works for partitioning, and we don’t have a similar formula for general coin-finding problems (at least, I don’t think so…).</p>
 
