@@ -3,7 +3,7 @@ layout: post
 title: "Math is hard"
 date: 2014-02-13 16:44:35 -0700
 comments: true
-published: true
+published: false
 categories: 
 ---
 
