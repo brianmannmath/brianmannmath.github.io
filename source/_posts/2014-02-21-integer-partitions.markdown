@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Integer-Partitions"
+title: "Integer Partitions in Python"
 date: 2014-02-21 23:20:29 -0700
 comments: true
 published: true
