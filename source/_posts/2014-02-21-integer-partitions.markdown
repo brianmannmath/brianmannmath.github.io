@@ -9,7 +9,7 @@ categories:
 
 Spoiler alert: if you don't want solutions to project euler problems 31 and 78, stop reading now. 
 
-I want to write about these problem, because although they seem similar (and are mathematically similar) they require somewhat solutions in order to run in a reasonable amount of time. Also, it will give me a chance to explain my thought process a bit.
+I want to write about these problem, because although they seem similar (and are mathematically similar) they require somewhat different solutions in order to run in a reasonable amount of time. Also, it will give me a chance to explain my thought process a bit.
 
 ### Problem 31
 
@@ -19,7 +19,7 @@ How do we approach this problem? First, we notice that there are a lot of choice
 
 If you do it this way, it's basically impossible to do any sort of dynamic programming. You'll need to do the same computations over and over again, and there's not way to avoid this.
 
-A much better solution is to use the tree-like structure natural to this problem and recurse. Here's what I mean: start with 200. Then substract off every possible coin value: $$(200-200), (200-100), (200-50), \ldots$$.
+A much better solution is to use the tree-like structure natural to this problem and recurse. Here's what I mean: start with 200, then substract off every possible coin value: $$(200-200), (200-100), (200-50), \ldots$$.
 
 There's a catch though! Once you subtract a coin of value $$k$$, you're never allowed to substract a coin of value larger than $$k$$ in the same branch of the tree. This is to guarantee uniqueness of the partitions (i.e. so we don't count both $$5 = 2 + 2 + 1$$ and $$5 = 1 + 2 + 2$$ as different partitions.)
 
