@@ -78,7 +78,7 @@ If you want, you can start printing out values for $$p(n)$$ using the above func
 
 Luckily, Euler proved the wonderful formula:
 $$\displaystyle p(n) = \sum_{k \neq 0} (-1)^{k-1} p(n - k(3k-1)/2)$$
-where $$p(0) = 1$$ and if $$k < 0$$ then $$p(k) = 0$$. So at least with this formula, the time it takes to computer $$p(n)$$ is linear in $$n$$.
+where $$p(0) = 1$$ and if $$k < 0$$ then $$p(k) = 0$$. So at least with this formula, the time it takes to compute $$p(n)$$ is linear in $$n$$.
 
 Unfortunately, this approach only works for partitioning, and we don't have a similar formula for general coin-finding problems (at least, I don't think so...).
 
