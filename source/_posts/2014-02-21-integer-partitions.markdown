@@ -44,14 +44,17 @@ Of course, there is a way to speed this up: we can have the computer keep track 
 Here's a solution in python:
 
 {%codeblock lang:py%}
-coins = [1,2,5,10,20,50,100,200]
-
-def howManyWays(amount,coinList):
+coins = [
+	1,2,5,
+	10,20,50,
+	100,200
+	]
+def how_many_ways(amount,coinList):
     cache = {}
     ways = 0
+
     if (amount == 0):
         return 1
-    
     for x in filter(lambda y: y <= amount, coinList):
         if (amount - x, x) in cache.keys():
             ways = ways + cache[(amount-x,x)]
@@ -61,7 +64,7 @@ def howManyWays(amount,coinList):
             
     return ways
 
-print howManyWays(200,coins)
+print how_many_ways(200,coins)
 {%endcodeblock%}
 
 Something to think about: what happens if we didn't have a coin with value 1? How would we need to change this?
@@ -78,31 +81,28 @@ If you want, you can start printing out values for $$p(n)$$ using the above func
 
 Luckily, Euler proved the wonderful formula:
 $$\displaystyle p(n) = \sum_{k \neq 0} (-1)^{k-1} p(n - k(3k-1)/2)$$
-where $$p(0) = 1$$ and if $$k < 0$$ then $$p(k) = 0$$. So at least with this formula, the time it takes to compute $$p(n)$$ is linear in $$n$$.
+where $$p(0) = 1$$ and if $$k < 0$$ then $$p(k) = 0$$. So at least with this formula, the time it takes to computed $$p(n)$$ is linear in $$n$$.
 
 Unfortunately, this approach only works for partitioning, and we don't have a similar formula for general coin-finding problems (at least, I don't think so...).
 
 So, the next step is to write a dynamic algorithm in python that implements this. (Don't try to run the following code. Trust me. I'll explain in a bit.)
 
 {%codeblock lang:py%}
-#list of numbers of partitions, starting with p(0) = 1
+#List of p(n), starting with p(0) = 1.
 part = [1,1,2]
 
-#Uses Euler's recursion to find p(n)
+#Uses Euler's recursion to find p(n).
 while (part[len(part)-1] % 1000000 != 0):
     val = 0
     k = 1
     n = len(part)
-
     while (n >= (k*(3*k-1))/2):
         val = val + ((-1)**(k-1))*part[int(n-(k*(3*k-1))/2)]
         k = k+1
-
     k = -1
     while (n >= (k*(3*k-1))/2):
         val = val + ((-1)**(k-1))*part[int(n-(k*(3*k-1))/2)]
         k = k-1
-
     part.append(val)
 
 print(len(part)-1, part[len(part)-1])  
@@ -113,26 +113,23 @@ If you're interested, you can insert a print statement into the loop and watch $
 There's one last thing to do, and I'll admit it took me an embarassingly long time to think of it. *We only need to keep track of the last 7 digits of $$p(n)$$.* Because of the way modular arithmetic works, and because Euler's formula only involves adding and multiplying, instead of keeping $$p(n)$$ in the list "part", just store $$p(n)$$ % $$10^6$$.
 
 {%codeblock lang:py%}
-#list of numbers of partitions, starting with p(0) = 1
+#List of p(n), starting with p(0) = 1.
 part = [1,1,2]
 
-#Uses Euler's recursion to find p(n)
+#Uses Euler's recursion to find p(n).
 while (part[len(part)-1] % 1000000 != 0):
     val = 0
     k = 1
     n = len(part)
-
     while (n >= (k*(3*k-1))/2):
         val = val + ((-1)**(k-1))*part[int(n-(k*(3*k-1))/2)]
         k = k+1
-
     k = -1
     while (n >= (k*(3*k-1))/2):
         val = val + ((-1)**(k-1))*part[int(n-(k*(3*k-1))/2)]
         k = k-1
 
-    #only need to keep the last 7 digits, since we're only adding
-    #remember, if a % m = 0 and b % m = 0 then a + b % m = 0 !!!!
+    #We only need to keep the last 7 digits, since we're only #adding remember, if a % m = 0 and b % m = 0 then a + b % m = #0 !!!!
     part.append(val % 1000000)
 
 print(len(part)-1, part[len(part)-1])
